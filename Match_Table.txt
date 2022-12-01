@@ -1,0 +1,180 @@
+
+
+USE World_Cup;
+go
+
+delete from match;
+go
+
+dbcc checkident(match, reseed, 0);
+go
+
+
+/*GROUP A*/
+
+-- QATAR - ECUADOR
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 2);
+--SENEGAL - NETHERLANDS
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 2);
+-- QATAR - SENEGAL
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (1, 3);
+-- NETHERLANDS - ECUADOR
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (1, 1);
+-- ECUADOR - SENEGAL
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (1, 2);
+-- NETHERLANDS - QATAR
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (2, 0);
+
+/*GROUP B*/
+
+-- ENGLAND - IRAN
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (6, 2);
+-- USA - WALES
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (1, 1);
+-- WALES - IRAN
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 2);
+-- ENGLAND - USA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 0);
+-- IRAN - USA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 1);
+-- WALES - ENGLAND
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 3);
+
+/*GROUP C*/
+
+-- ARGENTENIA - SAUDI ARABIA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (1, 2);
+-- MEXICO - POLAND
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 0);
+-- POLAND - SAUDI ARABIA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (2, 0);
+-- ARGENTINA - MEXICO
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (2, 0);
+-- SAUDI ARABIA - MEXICO
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (1, 2);
+-- POLAND - ARGENTINA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 2);
+
+/*GROUP D*/
+
+-- DENMARK - TUNESIA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 0);
+-- FRANCE - AUSTRALIA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (4, 1);
+-- TUNESIA - AUSTRALIA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 1);
+-- FRANCE - DENMARK
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (2, 1);
+-- AUSTRALIA - DENMARK
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (1, 0);
+-- TUNESIA - FRANCE
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (1, 0);
+-- GERMANY - JAPAN
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (1, 2);
+-- SPAIN - COSTA RICA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (7, 0);
+-- JAPAN - COSTA RICA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 1);
+-- SPAIN - GERMANY
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (1, 1);
+
+/* -- COSTA RICA - GERMANY
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 0);
+
+-- JAPAN - SPAIN
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 0);
+*/
+-- MAROCOO - CROATIA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 0);
+-- BELGIUM - CANADA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (1, 0);
+-- BELGIUM - MAROCOO
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 2);
+-- CROATIA - CANADA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (4, 1);
+
+/* CANADA - MAROCOO
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 0);
+
+-- CROATIA BELGIUM
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 0);
+*/
+-- SWITZERLAND - CAMERUN
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (1, 0);
+-- BRASIL - SERBIA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (2, 0);
+-- CAMERUN - SERBIA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (3, 3);
+-- BRASIL - SWITZERLAND
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (1, 0);
+
+/* -- SERBIA - SWITZERLAND
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 0);
+
+CAMERUN - BRASIL
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 0);
+*/
+
+-- URUGUAY - SOUTH KOREA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 0);
+-- PORTUGAL- GHANA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (3, 2);
+-- SOUTH KOREA - GHANA
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (2, 3);
+-- PORTUGAL - URUGUAY
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (2, 0);
+
+/* -- GHANA - URUGUAY
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 0);
+
+-- SOUTH KOREA - PORTUGAL
+INSERT INTO match ("goal_home", "goal_away")
+VALUES (0, 0);
+*/
