@@ -1,0 +1,32 @@
+USE World_Cup;
+go
+
+delete from team;
+go
+
+dbcc checkident(countries, reseed, 0);
+go
+
+INSERT INTO team(team_group)
+VALUES('A');
+
+INSERT INTO team(team_group)
+VALUES('B');
+
+INSERT INTO team(team_group)
+VALUES('C');
+
+INSERT INTO team(team_group)
+VALUES('D');
+
+INSERT INTO team(team_group)
+VALUES('E');
+
+INSERT INTO team(team_group)
+VALUES('F');
+
+INSERT INTO team(team_group)
+VALUES('G');
+
+INSERT INTO team(team_group)
+VALUES('H');
