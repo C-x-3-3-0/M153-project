@@ -1,32 +1,32 @@
 USE World_Cup;
 go
 
-delete from team;
+delete from gropus;
 go
 
 dbcc checkident(countries, reseed, 0);
 go
 
-INSERT INTO team(team_group)
+INSERT INTO team(groups_idenfication)
 VALUES('A');
 
-INSERT INTO team(team_group)
+INSERT INTO team(groups_idenfication)
 VALUES('B');
 
-INSERT INTO team(team_group)
+INSERT INTO team(groups_idenfication)
 VALUES('C');
 
-INSERT INTO team(team_group)
+INSERT INTO team(groups_idenfication)
 VALUES('D');
 
-INSERT INTO team(team_group)
+INSERT INTO team(groups_idenfication)
 VALUES('E');
 
-INSERT INTO team(team_group)
+INSERT INTO team(groups_idenfication)
 VALUES('F');
 
-INSERT INTO team(team_group)
+INSERT INTO team(groups_idenfication)
 VALUES('G');
 
-INSERT INTO team(team_group)
+INSERT INTO team(groups_idenfication)
 VALUES('H');
