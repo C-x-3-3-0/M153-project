@@ -1,0 +1,13 @@
+CREATE TRIGGER update_group_position
+ON match
+AFTER INSERT
+AS
+BEGIN
+    UPDATE groups
+    SET groups_position = 
+        CASE
+            WHEN goal_home > goal_away THEN 1
+            ELSE 2
+        END
+    WHERE groups_id = (SELECT groups_id FROM inserted);
+END
