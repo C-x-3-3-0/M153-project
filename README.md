@@ -2,7 +2,7 @@
 M153 Projekt von Ben Streich und Hao Wang/ INF20s - M153 Datenbank-Projekt
 
 ## 1.	Brief description
-In a group work (max. two learners) you will design and create a database on a freely chosen topic.
+In a group work (max. two learners) we will design and create a database on a freely chosen topic.
 The database will be created under MS-SQL (T-SQL) so that all scripts work with the "SQL Server Management Studio".
 The project includes:
 - a documentation with ER-diagram, database description
@@ -10,8 +10,6 @@ The project includes:
 - SQL code with which the data is entered into the database
 - SQL code for queries/manipulation or tests incl. a short test description to control the trigger, stored procedure and function.
 - a simple work report (with date, duration, description, person per executed work).
-
-Translated with www.DeepL.com/Translator (free version)
 
 
 ## 2.	Database
@@ -70,8 +68,7 @@ The work report (with at least date, duration, description, person per work perf
 ## 6.	Submit
 Scope: A zipped file with the name of the two group members or names in case of an individual work in the following form:
 
-M153_Project_LastName1_FirstName1_LastName2_FirstName2.zip resp.
-M153_Project_LastName_FirstName.zip
+M153_World_Cup_Wang_Hao_Streich_Ben.zip
 
 which contains the following files:
 - Documentation as pdf-file (M153_Projekt.pdf)
