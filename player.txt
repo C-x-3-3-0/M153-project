@@ -1,8 +1,0 @@
-USE World_Cup;
-go
-
-CREATE TABLE player ( 
-    player_surname varchar(255),
-    player_lastname varchar(255),
-	country_id INT FOREIGN KEY REFERENCES countries(country_id)
-);
