@@ -10,11 +10,11 @@ CREATE TABLE countries (
 );
 
 
-CREATE TABLE team (
-    team_id int NOT NULL identity,
-    team_group char(1),
-    group_position int,
-	PRIMARY KEY (team_id)
+CREATE TABLE groups (
+    groups_id int NOT NULL identity,
+    groups_idenfication char(1),
+    groups_position int,
+	PRIMARY KEY (groups_id)
 );
 
 CREATE TABLE match (
@@ -22,4 +22,12 @@ CREATE TABLE match (
     goal_home int,
     goal_away int,
 	PRIMARY KEY (match_id)
+);
+
+
+
+CREATE TABLE player ( 
+    player_surname varchar(255),
+    player_lastname varchar(255),
+	country_id INT FOREIGN KEY REFERENCES countries(country_id)
 );
