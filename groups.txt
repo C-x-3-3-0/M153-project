@@ -7,26 +7,26 @@ go
 dbcc checkident(countries, reseed, 0);
 go
 
-INSERT INTO team(groups_idenfication)
+INSERT INTO groups(groups_idenfication)
 VALUES('A');
 
-INSERT INTO team(groups_idenfication)
+INSERT INTO groups(groups_idenfication)
 VALUES('B');
 
-INSERT INTO team(groups_idenfication)
+INSERT INTO groups(groups_idenfication)
 VALUES('C');
 
-INSERT INTO team(groups_idenfication)
+INSERT INTO groups(groups_idenfication)
 VALUES('D');
 
-INSERT INTO team(groups_idenfication)
+INSERT INTO groups(groups_idenfication)
 VALUES('E');
 
-INSERT INTO team(groups_idenfication)
+INSERT INTO groups(groups_idenfication)
 VALUES('F');
 
-INSERT INTO team(groups_idenfication)
+INSERT INTO groups(groups_idenfication)
 VALUES('G');
 
-INSERT INTO team(groups_idenfication)
+INSERT INTO groups(groups_idenfication)
 VALUES('H');
