@@ -1,0 +1,34 @@
+CREATE DATABASE World_Cup;
+
+USE World_Cup;
+
+CREATE TABLE countries (
+    country_id int NOT NULL identity,
+    country_pre char(3),
+    country_name varchar(255),	
+    PRIMARY KEY (country_id)
+);
+
+
+CREATE TABLE groups (
+    groups_id int NOT NULL identity,
+    groups_idenfication char(1),
+    country_id INT FOREIGN KEY REFERENCES countries(country_id),
+	PRIMARY KEY (groups_id)
+);
+
+CREATE TABLE match (
+    match_id int NOT NULL identity,
+    goal_home int,
+    goal_away int,
+    goal_home_country_id INT FOREIGN KEY REFERENCES countries(country_id),
+    goal_away_country_id INT FOREIGN KEY REFERENCES countries(country_id),
+	PRIMARY KEY (match_id)
+	
+);
+
+CREATE TABLE player ( 
+    player_surname varchar(255),
+    player_lastname varchar(255),
+	country_id INT FOREIGN KEY REFERENCES countries(country_id)
+);
