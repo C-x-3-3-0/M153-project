@@ -1,5 +1,7 @@
-CREATE DATABASE World_Cup;
 
+--Zuerst ausführen
+CREATE DATABASE World_Cup;
+--Nach create database ausführen
 USE World_Cup;
 
 CREATE TABLE countries (
@@ -21,8 +23,8 @@ CREATE TABLE match (
     match_id int NOT NULL identity,
     goal_home int,
     goal_away int,
-    goal_home_country_id FOREIGN KEY REFERENCES countries(country_id),
-    goal_away_country_id FOREIGN KEY REFERENCES countries(country_id),
+    goal_home_country_id INT FOREIGN KEY REFERENCES countries(country_id),
+    goal_away_country_id INT FOREIGN KEY REFERENCES countries(country_id),
 	PRIMARY KEY (match_id)
 	
 );
