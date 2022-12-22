@@ -15,7 +15,7 @@ BEGIN
     RETURN @total_goals;
 END
 
-
+--execute the function
 DECLARE @total_goals INT;
 
 SET @total_goals = (SELECT dbo.GetTotalGoalsScoredByTeam(1));
