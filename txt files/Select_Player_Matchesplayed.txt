@@ -1,12 +1,4 @@
-use World_Cup
-
-SELECT  m.goal_home, 
-       c1.country_pre AS home_team, 
-       c2.country_pre AS away_team, 
-       
-       m.goal_away
-FROM match AS m
-JOIN countries AS c1 SELECT p.player_surname, 
+SELECT p.player_surname, 
        p.player_lastname, 
        c.country_name, 
        COUNT(m.match_id) AS matches_played
@@ -17,7 +9,3 @@ LEFT JOIN match AS m
     ON (p.country_id = m.goal_home_country_id OR p.country_id = m.goal_away_country_id)
 GROUP BY p.player_surname, p.player_lastname, c.country_name
 ORDER BY COUNT(m.match_id) DESC, p.player_surname ASC
-    ON m.goal_home_country_id = c1.country_id
-JOIN countries AS c2
-    ON m.goal_away_country_id = c2.country_id
-WHERE m.goal_home > m.goal_away
