@@ -18,8 +18,6 @@ INSERT INTO player(player_surname, player_lastname, country_id)
 VALUES('Tyler', 'Adams', '30');
 INSERT INTO player(player_surname, player_lastname, country_id)
 VALUES('Gareth', 'Bale', '31');
-INSERT INTO player(player_surname, player_lastname)
-VALUES('Lionel', 'Messi');
 INSERT INTO player(player_surname, player_lastname, country_id)
 VALUES('Andrés', 'Guardado', '18');
 INSERT INTO player(player_surname, player_lastname, country_id)
