@@ -1,0 +1,11 @@
+SELECT p.player_surname, 
+       p.player_lastname, 
+       c.country_name, 
+       COUNT(m.match_id) AS matches_played
+FROM player AS p
+JOIN countries AS c 
+    ON p.country_id = c.country_id
+LEFT JOIN match AS m 
+    ON (p.country_id = m.goal_home_country_id OR p.country_id = m.goal_away_country_id)
+GROUP BY p.player_surname, p.player_lastname, c.country_name
+ORDER BY COUNT(m.match_id) DESC, p.player_surname ASC
