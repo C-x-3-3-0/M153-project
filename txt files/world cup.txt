@@ -15,7 +15,7 @@ CREATE TABLE countries (
 CREATE TABLE groups (
     groups_id int NOT NULL identity,
     groups_idenfication char(1),
-    fk_country_id INT FOREIGN KEY REFERENCES countries(country_id),
+    country_id INT FOREIGN KEY REFERENCES countries(country_id),
 	PRIMARY KEY (groups_id)
 );
 
@@ -23,8 +23,8 @@ CREATE TABLE match (
     match_id int NOT NULL identity,
     goal_home int,
     goal_away int,
-    fk_goal_home_country_id INT FOREIGN KEY REFERENCES countries(country_id),
-    fk_goal_away_country_id INT FOREIGN KEY REFERENCES countries(country_id),
+    goal_home_country_id INT FOREIGN KEY REFERENCES countries(country_id),
+    goal_away_country_id INT FOREIGN KEY REFERENCES countries(country_id),
 	PRIMARY KEY (match_id)
 	
 );
@@ -32,5 +32,5 @@ CREATE TABLE match (
 CREATE TABLE player ( 
     player_surname varchar(255),
     player_lastname varchar(255),
-	fk_country_id INT FOREIGN KEY REFERENCES countries(country_id)
+	country_id INT FOREIGN KEY REFERENCES countries(country_id)
 );
